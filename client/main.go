@@ -16,7 +16,7 @@ func main() {
 	defer conn.Close()
 
 	// Open and transfer source file
-	file, err := os.Open("source.go")
+	file, err := os.Open("source/source.go")
 	if err != nil {
 		log.Fatal(err)
 	}

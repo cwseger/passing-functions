@@ -16,4 +16,10 @@ we'll see.
 - Navigate into `client` and `server`
 - In `server` run `go run main.go`
 - In `client` run `go run main.go`
-- To modify source that's executed, update the `client/source.go` file
+- To modify source that's executed, update the `client/source/source.go` file
+
+# How it works
+
+The client sends a file to the server to be executed. The client must send a Go
+file that is in the `source` package and contains a function called `Function`.
+This is the interface that allows the server to execute the file.
